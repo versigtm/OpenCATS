@@ -208,8 +208,8 @@ class Mailer
 
             if ($signature)
             {
-                $body .= '\n<br />\n<br /><span style=\"font-size: 10pt;\">Powered by <a href=\"http://www.opencats.org" alt=\"OpenCATS "
-                    . "Applicant Tracking System\">OpenCATS</a> (Free ATS)</span>';
+                $body .= '\n<br />\n<br /><span style=\"font-size: 10pt;\">Powered by <a href=\"http://www.opencats.org\" alt=\"OpenCATS "
+                    . "Applicant Tracking System\">OpenCATS</a></span>';
             }
 
             $this->_mailer->Body = '<div style="font: normal normal 12px Arial, Tahoma, sans-serif">'
@@ -221,7 +221,7 @@ class Mailer
         {
             if ($signature)
             {
-                $body .= "\n\nPowered by OpenCATS (http://www.opencats.org) Free ATS";
+                $body .= "\n\nPowered by OpenCATS";
             }
 
             $this->_mailer->isHTML(false);
